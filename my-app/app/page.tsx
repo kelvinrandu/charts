@@ -122,6 +122,96 @@ export const options5 = {
     type: "suffix",
   },
 };
+export const data6 = [
+  ["Country", "Latitude"],
+  ["Algeria", 36],
+  ["Angola", -8],
+  ["Benin", 6],
+  ["Botswana", -24],
+  ["Burkina Faso", 12],
+  ["Burundi", -3],
+  ["Cameroon", 3],
+  ["Canary Islands", 28],
+  ["Cape Verde", 15],
+  ["Central African Republic", 4],
+  ["Ceuta", 35],
+  ["Chad", 12],
+  ["Comoros", -12],
+  ["Cote d'Ivoire", 6],
+  ["Democratic Republic of the Congo", -3],
+  ["Djibouti", 12],
+  ["Egypt", 26],
+  ["Equatorial Guinea", 3],
+  ["Eritrea", 15],
+  ["Ethiopia", 9],
+  ["Gabon", 0],
+  ["Gambia", 13],
+  ["Ghana", 5],
+  ["Guinea", 10],
+  ["Guinea-Bissau", 12],
+  ["Kenya", -1],
+  ["Lesotho", -29],
+  ["Liberia", 6],
+  ["Libya", 32],
+  ["Madagascar", null],
+  ["Madeira", 33],
+  ["Malawi", -14],
+  ["Mali", 12],
+  ["Mauritania", 18],
+  ["Mauritius", -20],
+  ["Mayotte", -13],
+  ["Melilla", 35],
+  ["Morocco", 32],
+  ["Mozambique", -25],
+  ["Namibia", -22],
+  ["Niger", 14],
+  ["Nigeria", 8],
+  ["Republic of the Congo", -1],
+  ["Réunion", -21],
+  ["Rwanda", -2],
+  ["Saint Helena", -16],
+  ["São Tomé and Principe", 0],
+  ["Senegal", 15],
+  ["Seychelles", -5],
+  ["Sierra Leone", 8],
+  ["Somalia", 2],
+  ["Sudan", 15],
+  ["South Africa", -30],
+  ["South Sudan", 5],
+  ["Swaziland", -26],
+  ["Tanzania", -6],
+  ["Togo", 6],
+  ["Tunisia", 34],
+  ["Uganda", 1],
+  ["Western Sahara", 25],
+  ["Zambia", -15],
+  ["Zimbabwe", -18],
+];
+
+export const options6 = {
+  region: "002", // Africa
+  colorAxis: { colors: ["#00853f", "black", "#e31b23"] },
+  backgroundColor: "#81d4fa",
+  datalessRegionColor: "#f8bbd0",
+  defaultColor: "#f5f5f5",
+};
+export const data7 = [
+  ["Day", "", "", "", ""],
+  ["Mon", 20, 28, 38, 45],
+  ["Tue", 31, 38, 55, 66],
+  ["Wed", 50, 55, 77, 80],
+  ["Thu", 77, 77, 66, 50],
+  ["Fri", 68, 66, 22, 15],
+];
+
+export const options7 = {
+  legend: "none",
+  bar: { groupWidth: "100%" }, // Remove space between bars.
+  candlestick: {
+    fallingColor: { strokeWidth: 0, fill: "#a52714" }, // red
+    risingColor: { strokeWidth: 0, fill: "#0f9d58" }, // green
+  },
+};
 
 export default function Home() {
   return (
@@ -168,6 +258,20 @@ export default function Home() {
       height="400px"
       data={data5}
       options={options5}
+    />
+        <Chart
+      chartType="GeoChart"
+      width="100%"
+      height="400px"
+      data={data6}
+      options={options6}
+    />
+        <Chart
+      chartType="CandlestickChart"
+      width="100%"
+      height="400px"
+      data={data7}
+      options={options7}
     />
     </div>
   );
