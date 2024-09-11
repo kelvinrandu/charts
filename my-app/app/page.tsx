@@ -32,25 +32,25 @@ import { Chart } from "react-google-charts";
   colorAxis: { colors: ["yellow", "red"] },
 };
  const data2 = [
-  ["Task", "Hours per Day"],
-  ["Work", 11],
-  ["Eat", 2],
-  ["Commute", 2],
-  ["Watch TV", 2],
-  ["Sleep", 7],
+  ["Songs", "Number of streams"],
+  ["Song 1", 11],
+  ["Song 2", 2],
+  ["Song 3", 2],
+  ["Song 4", 2],
+  ["Song 5", 7],
 ];
 
  const options2 = {
-  title: "My Daily Activities",
+  title: "Streams",
   is3D: true,
 };
  const data3 = [
-  ["Task", "Hours per Day"],
-  ["Work", 11],
-  ["Eat", 2],
-  ["Commute", 2],
-  ["Watch TV", 2],
-  ["Sleep", 7], // CSS-style declaration
+  ["Songs", "Number of streams"],
+  ["Song 1", 11],
+  ["Song 2", 2],
+  ["Song 3", 2],
+  ["Song 4", 2],
+  ["Song 5", 7],
 ];
 
  const options3 = {
@@ -122,9 +122,9 @@ const data4 = [
 //   },
 // };
  const data6 = [
-  ["Country", "Latitude"],
+  ["Country", "streams"],
   ["Algeria", 36],
-  ["Angola", -8],
+  ["Angola", 20],
   ["Benin", 6],
   ["Botswana", -24],
   ["Burkina Faso", 12],
@@ -214,8 +214,8 @@ const data4 = [
  const data8 = [
   [
     { type: "date", label: "Day" },
-    "Average temperature",
-    "Average hours of daylight",
+    "Song",
+    "Streams",
   ],
   [new Date(2014, 0), -0.5, 5.7],
   [new Date(2014, 1), 0.4, 8.7],
@@ -233,7 +233,7 @@ const data4 = [
 
  const options8 = {
   chart: {
-    title: "Average Temperatures and Daylight in Iceland Throughout the Year",
+    title: "Streams",
   },
   width: 900,
   height: 500,
@@ -252,10 +252,10 @@ const data4 = [
 };
  const data9 = [
   [
-    "Day",
-    "Guardians of the Galaxy",
-    "The Avengers",
-    "Transformers: Age of Extinction",
+    "Song 1",
+    "Song 2",
+    "Song 3",
+    "Song 4",
   ],
   [1, 37.8, 80.8, 41.8],
   [2, 30.9, 69.5, 32.4],
@@ -275,8 +275,8 @@ const data4 = [
 
  const options9 = {
   chart: {
-    title: "Box Office Earnings in First Two Weeks of Opening",
-    subtitle: "in millions of dollars (USD)",
+    title: "Total streams",
+    subtitle: "in numbers",
   },
 };
 
