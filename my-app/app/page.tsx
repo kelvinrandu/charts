@@ -1,11 +1,9 @@
 
-'use client'
-
 
 import * as React from 'react';
 import { Chart } from "react-google-charts";
 
-export const data = [
+ const data = [
   ["Year", "Song1", "Song2", "Song3"],
   ["August", 1000, 400, 200],
   ["September", 1170, 460, 250],
@@ -13,13 +11,13 @@ export const data = [
   ["November", 1030, 540, 350],
 ];
 
-export const options = {
+ const options = {
   chart: {
     title: "Streams",
     subtitle: "Song1, Song2, and Song3: August-November",
   },
 };
-export const data1 = [
+ const data1 = [
   ["ID", "X", "Y", "Temperature"],
   ["", 80, 167, 120],
   ["", 79, 136, 130],
@@ -30,10 +28,10 @@ export const data1 = [
   ["", 68, 477, 80],
 ];
 
-export const options1 = {
+ const options1 = {
   colorAxis: { colors: ["yellow", "red"] },
 };
-export const data2 = [
+ const data2 = [
   ["Task", "Hours per Day"],
   ["Work", 11],
   ["Eat", 2],
@@ -42,11 +40,11 @@ export const data2 = [
   ["Sleep", 7],
 ];
 
-export const options2 = {
+ const options2 = {
   title: "My Daily Activities",
   is3D: true,
 };
-export const data3 = [
+ const data3 = [
   ["Task", "Hours per Day"],
   ["Work", 11],
   ["Eat", 2],
@@ -55,12 +53,12 @@ export const data3 = [
   ["Sleep", 7], // CSS-style declaration
 ];
 
-export const options3 = {
+ const options3 = {
   title: "My Daily Activities",
   pieHole: 0.4,
   is3D: false,
 };
-export const data4 = [
+ const data4 = [
   ["Generation", "Descendants"],
   [0, 1],
   [1, 33],
@@ -68,7 +66,7 @@ export const data4 = [
   [3, 2013],
 ];
 
-export const options4 = {
+ const options4 = {
   title: "Descendants by Generation",
   hAxis: { title: "Generation", minValue: 0, maxValue: 3 },
   vAxis: { title: "Descendants", minValue: 0, maxValue: 2100 },
@@ -79,7 +77,7 @@ export const options4 = {
     },
   },
 };
-export const data5 = [
+ const data5 = [
   ["id", "childLabel", "parent", "size", { role: "style" }],
   [0, "Life", -1, 1, "black"],
   [1, "Archaea", 0, 1, "black"],
@@ -115,14 +113,14 @@ export const data5 = [
   [31, "Vetulicolia", 24, 1, "black"],
 ];
 
-export const options5 = {
+ const options5 = {
   colors: ["black", "black", "black"],
   wordtree: {
     format: "explicit",
     type: "suffix",
   },
 };
-export const data6 = [
+ const data6 = [
   ["Country", "Latitude"],
   ["Algeria", 36],
   ["Angola", -8],
@@ -188,14 +186,14 @@ export const data6 = [
   ["Zimbabwe", -18],
 ];
 
-export const options6 = {
+ const options6 = {
   region: "002", // Africa
   colorAxis: { colors: ["#00853f", "black", "#e31b23"] },
   backgroundColor: "#81d4fa",
   datalessRegionColor: "#f8bbd0",
   defaultColor: "#f5f5f5",
 };
-export const data7 = [
+ const data7 = [
   ["Day", "", "", "", ""],
   ["Mon", 20, 28, 38, 45],
   ["Tue", 31, 38, 55, 66],
@@ -204,7 +202,7 @@ export const data7 = [
   ["Fri", 68, 66, 22, 15],
 ];
 
-export const options7 = {
+ const options7 = {
   legend: "none",
   bar: { groupWidth: "100%" }, // Remove space between bars.
   candlestick: {
