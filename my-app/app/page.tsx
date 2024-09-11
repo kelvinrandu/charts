@@ -192,7 +192,7 @@ import { Chart } from "react-google-charts";
     risingColor: { strokeWidth: 0, fill: "#0f9d58" }, // green
   },
 };
-export const data8 = [
+ const data8 = [
   [
     { type: "date", label: "Day" },
     "Average temperature",
@@ -212,7 +212,7 @@ export const data8 = [
   [new Date(2014, 11), -0.2, 4.5],
 ];
 
-export const options8 = {
+ const options8 = {
   chart: {
     title: "Average Temperatures and Daylight in Iceland Throughout the Year",
   },
@@ -231,7 +231,7 @@ export const options8 = {
     },
   },
 };
-export const data9 = [
+ const data9 = [
   [
     "Day",
     "Guardians of the Galaxy",
@@ -254,7 +254,7 @@ export const data9 = [
   [14, 4.2, 6.2, 3.4],
 ];
 
-export const options9 = {
+ const options9 = {
   chart: {
     title: "Box Office Earnings in First Two Weeks of Opening",
     subtitle: "in millions of dollars (USD)",
