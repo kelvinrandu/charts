@@ -58,25 +58,7 @@ import { Chart } from "react-google-charts";
   pieHole: 0.4,
   is3D: false,
 };
- const data4 = [
-  ["Generation", "Descendants"],
-  [0, 1],
-  [1, 33],
-  [2, 269],
-  [3, 2013],
-];
 
- const options4 = {
-  title: "Descendants by Generation",
-  hAxis: { title: "Generation", minValue: 0, maxValue: 3 },
-  vAxis: { title: "Descendants", minValue: 0, maxValue: 2100 },
-  trendlines: {
-    0: {
-      type: "exponential",
-      color: "green",
-    },
-  },
-};
  const data5 = [
   ["id", "childLabel", "parent", "size", { role: "style" }],
   [0, "Life", -1, 1, "black"],
