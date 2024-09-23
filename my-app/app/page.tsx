@@ -54,7 +54,7 @@ import { Chart } from "react-google-charts";
 ];
 
  const options3 = {
-  title: "My Daily Activities",
+  title: "BY SHOP",
   pieHole: 0.4,
   is3D: false,
 };
@@ -67,13 +67,13 @@ const data4 = [
 ];
 
  const options4 = {
-  title: "Descendants by Generation",
+  title: "TURNOVER PER MONTH",
   hAxis: { title: "Generation", minValue: 0, maxValue: 3 },
   vAxis: { title: "Descendants", minValue: 0, maxValue: 2100 },
   trendlines: {
     0: {
       type: "exponential",
-      color: "green",
+      color: "orange",
     },
   },
 };
@@ -276,8 +276,8 @@ const data4 = [
 
  const options9 = {
   chart: {
-    title: "Total streams",
-    subtitle: "in numbers",
+    title: "PERFORMANCE PER TRACK",
+    subtitle: "in streams",
   },
 };
 
@@ -335,20 +335,7 @@ export default function Home() {
       data={data6}
       options={options6}
     />
-        <Chart
-      chartType="CandlestickChart"
-      width="100%"
-      height="400px"
-      data={data7}
-      options={options7}
-    />
-        <Chart
-      chartType="Line"
-      width="100%"
-      height="400px"
-      data={data8}
-      options={options8}
-    />
+
         <Chart
       chartType="Line"
       width="100%"
