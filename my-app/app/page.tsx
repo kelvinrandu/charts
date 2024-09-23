@@ -57,7 +57,7 @@ const data4 = [
  const options4 = {
   title: "TURNOVER PER MONTH",
   hAxis: { title: "Generation", minValue: 0, maxValue: 3 },
-  vAxis: { title: "Descendants", minValue: 0, maxValue: 2100 },
+  vAxis: { title: "Streams", minValue: 0, maxValue: 2100 },
   trendlines: {
     0: {
       type: "exponential",
@@ -217,7 +217,7 @@ const data4 = [
 
 export default function Home() {
   return (
-    <Box paddingTop={20} paddingX={20}>
+    <Box paddingTop={20} gap={20} paddingX={20}>
       
       <Chart
       chartType="Bar"
