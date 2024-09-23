@@ -189,9 +189,10 @@ const data4 = [
 
  const options6 = {
   region: "002", // Africa
-  colorAxis: { colors: ["#00853f", "black", "orange"] },
+  // colorAxis: { colors: ["#00853f", "black", "orange"] },
+  colorAxis: { colors: [ "white", "orange"] },
   backgroundColor: "#81d4fa",
-  datalessRegionColor: "orange",
+  datalessRegionColor: "white",
   defaultColor: "#f5f5f5",
 };
  const data7 = [
