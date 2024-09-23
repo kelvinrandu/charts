@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import { Chart } from "react-google-charts";
+import { Box } from '@chakra-ui/react'
 
  const data = [
   ["Year", "Song1", "Song2", "Song3"],
@@ -216,7 +217,7 @@ const data4 = [
 
 export default function Home() {
   return (
-    <div>
+    <Box paddingTop={20} paddingX={20}>
       
       <Chart
       chartType="Bar"
@@ -270,6 +271,6 @@ export default function Home() {
       data={data9}
       options={options9}
     />
-    </div>
+    </Box>
   );
 }
