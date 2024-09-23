@@ -17,20 +17,7 @@ import { Chart } from "react-google-charts";
     subtitle: "Song1, Song2, and Song3: August-November",
   },
 };
- const data1 = [
-  ["ID", "X", "Y", "Temperature"],
-  ["", 80, 167, 120],
-  ["", 79, 136, 130],
-  ["", 78, 184, 50],
-  ["", 72, 278, 230],
-  ["", 81, 200, 210],
-  ["", 72, 170, 100],
-  ["", 68, 477, 80],
-];
 
- const options1 = {
-  colorAxis: { colors: ["yellow", "red"] },
-};
  const data2 = [
   ["Songs", "Number of streams"],
   ["Song 1", 11],
@@ -238,13 +225,7 @@ export default function Home() {
       data={data}
       options={options}
     />
-         <Chart
-      chartType="BubbleChart"
-      width="100%"
-      height="400px"
-      data={data1}
-      options={options1}
-    />
+
        <Chart
       chartType="PieChart"
       data={data2}
