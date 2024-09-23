@@ -195,62 +195,8 @@ const data4 = [
   datalessRegionColor: "white",
   defaultColor: "#f5f5f5",
 };
- const data7 = [
-  ["Day", "", "", "", ""],
-  ["Mon", 20, 28, 38, 45],
-  ["Tue", 31, 38, 55, 66],
-  ["Wed", 50, 55, 77, 80],
-  ["Thu", 77, 77, 66, 50],
-  ["Fri", 68, 66, 22, 15],
-];
 
- const options7 = {
-  legend: "none",
-  bar: { groupWidth: "100%" }, // Remove space between bars.
-  candlestick: {
-    fallingColor: { strokeWidth: 0, fill: "#a52714" }, // red
-    risingColor: { strokeWidth: 0, fill: "#0f9d58" }, // green
-  },
-};
- const data8 = [
-  [
-    { type: "date", label: "Day" },
-    "Song",
-    "Streams",
-  ],
-  [new Date(2014, 0), -0.5, 5.7],
-  [new Date(2014, 1), 0.4, 8.7],
-  [new Date(2014, 2), 0.5, 12],
-  [new Date(2014, 3), 2.9, 15.3],
-  [new Date(2014, 4), 6.3, 18.6],
-  [new Date(2014, 5), 9, 20.9],
-  [new Date(2014, 6), 10.6, 19.8],
-  [new Date(2014, 7), 10.3, 16.6],
-  [new Date(2014, 8), 7.4, 13.3],
-  [new Date(2014, 9), 4.4, 9.9],
-  [new Date(2014, 10), 1.1, 6.6],
-  [new Date(2014, 11), -0.2, 4.5],
-];
 
- const options8 = {
-  chart: {
-    title: "Streams",
-  },
-  width: 900,
-  height: 500,
-  series: {
-    // Gives each series an axis name that matches the Y-axis below.
-    0: { axis: "Temps" },
-    1: { axis: "Daylight" },
-  },
-  axes: {
-    // Adds labels to each axis; they don't have to match the axis names.
-    y: {
-      Temps: { label: "Temps (Celsius)" },
-      Daylight: { label: "Daylight" },
-    },
-  },
-};
  const data9 = [
   [
     "Song 1",
