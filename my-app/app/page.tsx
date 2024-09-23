@@ -47,7 +47,7 @@ import { Box } from '@chakra-ui/react'
   is3D: false,
 };
 const data4 = [
-  ["Generation", "Descendants"],
+  ["Generation", "Streams"],
   [0, 1],
   [1, 33],
   [2, 269],
@@ -56,7 +56,7 @@ const data4 = [
 
  const options4 = {
   title: "TURNOVER PER MONTH",
-  hAxis: { title: "Generation", minValue: 0, maxValue: 3 },
+  hAxis: { title: "Streams", minValue: 0, maxValue: 3 },
   vAxis: { title: "Streams", minValue: 0, maxValue: 2100 },
   trendlines: {
     0: {
